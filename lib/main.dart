@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/current_weather.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 

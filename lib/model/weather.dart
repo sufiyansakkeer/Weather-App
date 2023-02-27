@@ -9,11 +9,11 @@ class Weather {
 
   factory Weather.fromJson(Map<String, dynamic> json) {
     return Weather(
-      json['main']['temp'].toDouble(),
-      json['main']['feels_like'].toDouble(),
-      json['main']['temp_min'].toDouble(),
-      json['main']['temp_max'].toDouble(),
-      json['weather'][0]['description'],
+      json['main']['temp'].toDouble() ?? '',
+      json['main']['feels_like'].toDouble() ?? '',
+      json['main']['temp_min'].toDouble() ?? '',
+      json['main']['temp_max'].toDouble() ?? '',
+      json['weather'][0]['description'] ?? '',
     );
   }
 }
